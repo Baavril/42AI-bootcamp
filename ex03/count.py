@@ -16,10 +16,7 @@ import sys
 import string
 
 def text_analyzer(txt = ""):
-    nu = 0;
-    nl = 0;
-    np = 0;
-    ns = 0;
+    nu, nl, np, ns = 0, 0, 0, 0
     if not txt:
        txt = input("What is your input ?\n")
     nb_chars = len(txt)

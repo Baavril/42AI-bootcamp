@@ -3,24 +3,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    whois.py                                           :+:      :+:    :+:    #
+#    kata01.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: baavril <baavril@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/11/04 12:56:24 by baavril           #+#    #+#              #
-#    Updated: 2019/11/04 12:56:24 by baavril          ###   ########.fr        #
+#    Created: 2019/11/04 18:02:27 by baavril           #+#    #+#              #
+#    Updated: 2019/11/04 18:02:27 by baavril          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-import sys
+languages = {
+'Python': 'Guido van Rossum',
+'Ruby': 'Yukihiro Matsumoto',
+'PHP': 'Rasmus Lerdorf',
+}
 
-def     whois():
-        if len(sys.argv) > 1:
-            integer = int(sys.argv[1])
-            if integer % 2:
-                print("{0} is Odd number".format(integer))
-            else:
-                print("{0} is Even number".format(integer))
+if __name__ == '__main__'
 
-if __name__ == '__main__':
-    whois()
