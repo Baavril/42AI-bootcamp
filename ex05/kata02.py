@@ -3,21 +3,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    kata01.py                                          :+:      :+:    :+:    #
+#    kata02.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: baavril <baavril@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/11/04 18:02:27 by baavril           #+#    #+#              #
-#    Updated: 2019/11/04 18:02:27 by baavril          ###   ########.fr        #
+#    Created: 2019/11/05 08:11:23 by baavril           #+#    #+#              #
+#    Updated: 2019/11/05 08:11:23 by baavril          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 if __name__ == '__main__':
 
-    languages = {
-            'Python': 'Guido van Rossum',
-            'Ruby': 'Yukihiro Matsumoto',
-            'PHP': 'Rasmus Lerdorf',
-            }
-    for key in languages:
-        print(key + " was created by " + languages[key])
+    print('{0[3]:0>2}/{0[4]}/{0[2]}\
+ {0[0]:0>2}:{0[1]}'.format((3, 30, 2019, 9, 25)))
