@@ -17,7 +17,10 @@ import re
 
 if __name__ == '__main__':
 
-    nb = int(sys.argv[2])
-    lw = re.sub('\b[a-zA-Z0-9]\s', '', sys.argv[1])
-    lw = re.split(' +', lw)
-    print([w for w in lw if len(w) > int(sys.argv[2])])
+    try:
+        nb = int(sys.argv[2])
+        lw = re.sub('\b[a-zA-Z]\s', '', sys.argv[1])
+        lw = re.split(' +', lw)
+        print([w for w in lw if len(w) > int(sys.argv[2])])
+    except:
+        print("ERROR", end='\n')
