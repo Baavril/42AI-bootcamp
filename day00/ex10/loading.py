@@ -22,14 +22,14 @@ def ft_progress(listy):
         eta = float(time() - start)
         prct = i / len(listy)
         load = round(prct * 10) * "=" + ">"
-        print("\x1b[6;31;40mETA: {0:4.2f}s [{2:12}[{1:.0%}] ]\x1b[0m".format(eta, prct, load), end='\r')
+        print("\x1b[6;32;40mETA: {0:4.2f}s [{2:12}[{1:.0%}] ]\x1b[0m".format(eta, prct, load), end='\r')
         yield i
 
 if __name__ == '__main__':
-    listy = range(1000)
+    listy = range(3000)
     ret = 0
     for elem in ft_progress(listy):
         ret += elem
-        sleep(0.0005)
+        sleep(0.005)
     print()
     print(ret)
